@@ -1,8 +1,8 @@
 
-  ## Nodejs
+  ## Test [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
   
   ## Description
-  Finalize testing phase
+  this is only a test
 
   ## Table of Contents
   - [Installation](#installation)
@@ -18,7 +18,7 @@ no
 n/a
 
   ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 ## Contributing
 n/a
