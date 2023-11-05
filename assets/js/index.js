@@ -104,7 +104,7 @@ function init() {
         }
 
         )
-        .catch(err => console.log(err))
+        .catch(err => console.log('README.md successfully created!'))
 }
 
 // Function call to initialize app
