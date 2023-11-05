@@ -4,7 +4,8 @@ function renderLicenseBadge(license) {
   if (license === 'None') {
     return '';
   } else {
-    return `[![License](https://img.shields.io/badge/${license}-blue.svg)]`
+    return `[![License](https://img.shields.io/badge/${license}-blue.svg)]`;
+
   }
 }
 
@@ -30,9 +31,36 @@ function renderLicenseSection(license) {
 //[![License](https://img.shields.io/badge/Apache_2.0.svg)](https://opensource.org/licenses/Apache-2.0)
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `## ${data.title}
+  return `
+  ## ${data.title}
+  
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
+  ## Installation
+${data.installation}
+
+  ## Usage
+${data.usage}
+
+  ## License
 ${renderLicenseSection(data.license)}
 
+## Contributing
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Questions
+If you have any questions, you can reach me at ${data.email} and you can find me on GitHub @ (https://github.com/${data.github})
 `;
 }
 

@@ -22,6 +22,7 @@ const questions = [{
     type: 'input',
     message: 'What is the description of your repository? (Required)',
     name: 'description',
+
     //make sure description is typed
     validate: nameInput => {
         if (nameInput) {
@@ -31,32 +32,79 @@ const questions = [{
             return false;
         }
     }
-
+},
+{
+    type: 'input',
+    message: 'Are there any installation instructions?',
+    name: 'installation',
+},
+{
+    type: 'input',
+    message: 'Please provide any/all usage information:',
+    name: 'usage',
+},
+{
+    type: 'input',
+    message: 'Please provide contribution guidelines:',
+    name: 'contributing',
+},
+{
+    type: 'input',
+    message: 'Please provide test instructions:',
+    name: 'tests',
 },
 {
     type: 'list',
-    message: 'What is your README badge? (Required)',
+    message: 'Please choose a license for your application:',
     name: 'license',
     choices: ['Apache-2.0', 'MIT', 'GPL 3.0', 'BSD 3', 'None']
+},
+{
+    type: 'input',
+    message: 'What is your GitHub username? (Required)',
+    name: 'github',
+    
+    //make sure GitHub is entered
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+            console.log('Please enter a description of the repository.');
+            return false;
+        }
+    }
+},
+{
+    type: 'input',
+    message: 'What is your email address? (Required)',
+    name: 'email',
 
-}
-];
+    //make sure email is entered
+    validate: nameInput => {
+        if (nameInput) {
+            return true;
+        } else {
+            console.log('Please enter a description of the repository.');
+            return false;
+        }
+    }
+}];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { 
+function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => console.log(err))
 }
 
 // TODO: Create a function to initialize app
-function init() { 
+function init() {
     inquirer
-    .prompt(questions)
-    .then((data) =>{
-        writeToFile('My-ReadME.md', generateMarkdown(data))
-    }
+        .prompt(questions)
+        .then((data) => {
+            writeToFile('README.md', generateMarkdown(data))
+        }
 
-    )
-    .catch(err => console.log(err))
+        )
+        .catch(err => console.log(err))
 }
 
 // Function call to initialize app
