@@ -40,22 +40,22 @@ const questions = [{
 },
 {
     type: 'input',
-    message: 'Please provide any/all usage information:',
+    message: 'Please provide usage information.',
     name: 'usage',
 },
 {
     type: 'input',
-    message: 'Please provide contribution guidelines:',
+    message: 'Please provide contribution guidelines.',
     name: 'contributing',
 },
 {
     type: 'input',
-    message: 'Please provide test instructions:',
+    message: 'Please provide test instructions.',
     name: 'tests',
 },
 {
     type: 'list',
-    message: 'Please choose a license for your application:',
+    message: 'Please choose a license for your application.',
     name: 'license',
     choices: ['Apache-2.0', 'MIT', 'GPL 3.0', 'BSD 3', 'None']
 },
