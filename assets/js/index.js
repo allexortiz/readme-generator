@@ -57,7 +57,7 @@ const questions = [{
     type: 'list',
     message: 'Please choose a license for your application.',
     name: 'license',
-    choices: ['Apache-2.0', 'MIT', 'GPL 3.0', 'BSD 3', 'None']
+    choices: ['Apache 2.0', 'MIT', 'GPL 3.0', 'BSD 3', 'None']
 },
 {
     type: 'input',
@@ -92,8 +92,15 @@ const questions = [{
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => console.log(err))
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log('README.md successfully created!');
+        }
+    });
 }
+
 
 // TODO: Create a function to initialize app
 function init() {
