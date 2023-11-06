@@ -35,5 +35,3 @@ I have created a professional README.md generator based on a series of questions
 
 ## Links
 GitHub Repository: https://github.com/allexortiz/readme-generator
-
-Website: 
