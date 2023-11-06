@@ -1,30 +1,31 @@
 
-  ## Test [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+## README Generator
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
   
-  ## Description
-  this is only a test
+## Description
+This application was created to generate a professional README based on a series of questions a user answers in their command line using Node.js
 
-  ## Table of Contents
+## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
   - [Tests](#tests)
   - [Questions](#questions)
 
-  ## Installation
-no
+## Installation
+The user should clone the repository from GitHub and download Node. This application also requires a file system and inquirer module.
 
-  ## Usage
-n/a
+## Usage
+Use inquirer from your command line to answer questions about your project.
 
-  ## License
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+## License
+This project is licensed under GPL 3.0
 
 ## Contributing
-n/a
+Contributors should read the installation section.
 
 ## Tests
-n/a
+npm test
 
 ## Questions
-If you have any questions, you can reach me at allexortiz@outlook.com and you can find me on GitHub @ (https://github.com/allexortiz)
+If you have any questions or inquiries about this application, you can reach me at allexortiz@outlook.com or you can find me on GitHub @ (https://github.com/allexortiz)
