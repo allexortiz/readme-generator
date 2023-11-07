@@ -25,7 +25,7 @@ This project is licensed under GPL 3.0
 Contributors should read the installation section.
 
 ## Tests
-npm test
+n/a
 
 ## Questions
 If you have any questions or inquiries about this application, you can reach me at allexortiz@outlook.com or you can find me on GitHub @ (https://github.com/allexortiz)
