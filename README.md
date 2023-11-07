@@ -32,6 +32,7 @@ I have created a professional README.md generator based on a series of questions
 
 
 ## Images
+![test](./assets/images/README%20Generator.gif)
 
 ## Links
 GitHub Repository: https://github.com/allexortiz/readme-generator
